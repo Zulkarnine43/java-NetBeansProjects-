@@ -1,0 +1,34 @@
+package overriding;
+
+public class chicken_biriani {
+  //Overridden method
+   public void recipe()
+   {
+      System.out.println("This is chicken biriani recipe");
+   }
+}
+
+package overriding;
+
+
+public class mutton_biriani extends chicken_biriani {
+   //Overriding method
+   @Override
+   public void recipe(){
+      System.out.println("This is mutton biriani recipe");
+   }
+}
+
+package overriding;
+
+//Name: Faruqe Hasan
+//Id: 163432560
+
+public class Overriding {
+
+    public static void main(String[] args) {
+       mutton_biriani c_biriani = new mutton_biriani();
+       c_biriani.recipe();
+    }
+    
+}
